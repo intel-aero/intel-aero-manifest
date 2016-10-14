@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- projects -->
+  <remote fetch="http://git.yoctoproject.org/git/" name="yocto"/>
+  <remote fetch="git://git.openembedded.org/" name="oe"/>
+  <remote fetch="git://github.com/intel-aero/" name="intel-aero"/>
+
+  <project name="poky" remote="yocto" revision="f5da2a5913319ad6ac2141438ba1aa17576326ab"/>
+  <project name="meta-intel" remote="yocto" path="poky/meta-intel" revision="5326759e90180523da3617becfab4a7e21d7ebde"/>
+  <project name="meta-openembedded" remote="oe" path="poky/meta-openembedded" revision="f849b9fd1eb53cacb9c0b0205e1b469ec1d53779"/>
+  <project name="meta-intel-aero" remote="intel-aero" path="poky/meta-intel-aero" revision="2476941f2b521e726179e4b4931232d20cb8aa14"/>
+  <project name="meta-intel-aero-connectivity" remote="intel-aero" path="poky/meta-intel-aero-connectivity" revision="cc2978f4868703f7da4f47a487a14b54edf56a68"/>
+</manifest>
+
+<!--
+
+Build Instructions:
+===================
+# Initialize build environment variables by running
+source oe-init-build-env
+
+# Add extra layers by adding to conf/bblayers.conf
+BBLAYERS += "${TOPDIR}/../meta-intel"
+BBLAYERS += "${TOPDIR}/../meta-intel-aero"
+BBLAYERS += "${TOPDIR}/../meta-intel-aero-connectivity"
+BBLAYERS += "${TOPDIR}/../meta-openembedded/meta-oe"
+BBLAYERS += "${TOPDIR}/../meta-openembedded/meta-python"
+BBLAYERS += "${TOPDIR}/../meta-openembedded/meta-networking"
+
+# Copy meta-intel-aero conf/local.conf
+cp $POKYSRC/meta-intel-aero/conf/local.conf conf/local.conf
+
+# Build intel-aero-image
+bitbake intel-aero-image
+
+Build instructions are also located at:
+https://github.com/intel-aero/meta-intel-aero/wiki/Quickstart-Guide
+-->
