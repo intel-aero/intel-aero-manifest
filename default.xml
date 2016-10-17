@@ -1,28 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <!-- projects -->
+  <!-- External projects -->
   <remote fetch="http://git.yoctoproject.org/git/" name="yocto"/>
   <remote fetch="git://git.openembedded.org/" name="oe"/>
+  <remote fetch="git://github.com/meta-qt5/" name="qt5"/>
   <remote fetch="git://github.com/intel-aero/" name="intel-aero"/>
 
-  <project name="poky" remote="yocto" revision="f5da2a5913319ad6ac2141438ba1aa17576326ab"/>
-  <project name="meta-intel" remote="yocto" path="poky/meta-intel" revision="5326759e90180523da3617becfab4a7e21d7ebde"/>
-  <project name="meta-openembedded" remote="oe" path="poky/meta-openembedded" revision="f849b9fd1eb53cacb9c0b0205e1b469ec1d53779"/>
-  <project name="meta-intel-aero" remote="intel-aero" path="poky/meta-intel-aero" revision="2476941f2b521e726179e4b4931232d20cb8aa14"/>
-  <project name="meta-intel-aero-connectivity" remote="intel-aero" path="poky/meta-intel-aero-connectivity" revision="cc2978f4868703f7da4f47a487a14b54edf56a68"/>
+  <project name="poky" remote="yocto" revision="e93596fe74927e2e2f4dd7f671994ccb9744cff8"/>
+  <project name="meta-openembedded" remote="oe" path="poky/meta-openembedded" revision="851a064b53dca3b14dd33eaaaca9573b1a36bf0e"/>
+  <project name="meta-qt4" remote="yocto" path="poky/meta-qt4" revision="fc9b050569e94b5176bed28b69ef28514e4e4553"/>
+  <project name="meta-intel-aero" remote="intel-aero" path="poky/meta-intel-aero" revision="b61432ff73f8be21aaf6a335faa9b83aa961ac95"/>
+  <project name="meta-intel-aero-connectivity" remote="intel-aero" path="poky/meta-intel-aero-connectivity" revision="b9e38c18c0abf40d5eef8cdadf459e263bd19936"/>
+  <project name="meta-uav" remote="intel-aero" path="poky/meta-uav" revision="f1abdde4895043ae712cd27d8a6295d17dcf26a7"/>
+  <project name="meta-qt5" remote="qt5" path="poky/meta-qt5" revision="9aa870eecf6dc7a87678393bd55b97e21033ab48"/>
+  <project name="meta-intel-aero-librealsense" remote="intel-aero" path="poky/meta-intel-aero-librealsense" revision="aaede82379ebcf1ae84716855bc2b4efc4a9d53b"/>
 </manifest>
 
 <!--
 
 Build Instructions:
 ===================
+
+cd poky; export POKYSRC=`pwd`
+
 # Initialize build environment variables by running
 source oe-init-build-env
 
 # Add extra layers by adding to conf/bblayers.conf
-BBLAYERS += "${TOPDIR}/../meta-intel"
 BBLAYERS += "${TOPDIR}/../meta-intel-aero"
 BBLAYERS += "${TOPDIR}/../meta-intel-aero-connectivity"
+BBLAYERS += "${TOPDIR}/../meta-intel-aero-librealsense"
+BBLAYERS += "${TOPDIR}/../meta-qt4"
+BBLAYERS += "${TOPDIR}/../meta-qt5"
+BBLAYERS += "${TOPDIR}/../meta-uav"
 BBLAYERS += "${TOPDIR}/../meta-openembedded/meta-oe"
 BBLAYERS += "${TOPDIR}/../meta-openembedded/meta-python"
 BBLAYERS += "${TOPDIR}/../meta-openembedded/meta-networking"
@@ -33,6 +43,4 @@ cp $POKYSRC/meta-intel-aero/conf/local.conf conf/local.conf
 # Build intel-aero-image
 bitbake intel-aero-image
 
-Build instructions are also located at:
-https://github.com/intel-aero/meta-intel-aero/wiki/Quickstart-Guide
 -->
