@@ -9,10 +9,11 @@
   <project name="poky" remote="yocto" revision="e93596fe74927e2e2f4dd7f671994ccb9744cff8"/>
   <project name="meta-openembedded" remote="oe" path="poky/meta-openembedded" revision="851a064b53dca3b14dd33eaaaca9573b1a36bf0e"/>
   <project name="meta-qt4" remote="yocto" path="poky/meta-qt4" revision="fc9b050569e94b5176bed28b69ef28514e4e4553"/>
-  <project name="meta-intel-aero" remote="intel-aero" path="poky/meta-intel-aero" revision="b61432ff73f8be21aaf6a335faa9b83aa961ac95"/>
+  <project name="meta-intel-aero" remote="intel-aero" path="poky/meta-intel-aero" revision="879de50d861e8e791bf056f4df1d5c8248b4b471"/>
   <project name="meta-intel-aero-connectivity" remote="intel-aero" path="poky/meta-intel-aero-connectivity" revision="b9e38c18c0abf40d5eef8cdadf459e263bd19936"/>
   <project name="meta-uav" remote="intel-aero" path="poky/meta-uav" revision="f1abdde4895043ae712cd27d8a6295d17dcf26a7"/>
   <project name="meta-qt5" remote="qt5" path="poky/meta-qt5" revision="9aa870eecf6dc7a87678393bd55b97e21033ab48"/>
+  <project name="meta-ros" remote="intel-aero" path="poky/meta-ros" revision="909bbd3818ce1e78532f665fc36db4cc1887e1fe"/>
   <project name="meta-intel-aero-librealsense" remote="intel-aero" path="poky/meta-intel-aero-librealsense" revision="aaede82379ebcf1ae84716855bc2b4efc4a9d53b"/>
 </manifest>
 
@@ -21,24 +22,11 @@
 Build Instructions:
 ===================
 
-cd poky; export POKYSRC=`pwd`
+cd poky;
 
 # Initialize build environment variables by running
+export TEMPLATECONF=meta-intel-aero/conf/
 source oe-init-build-env
-
-# Add extra layers by adding to conf/bblayers.conf
-BBLAYERS += "${TOPDIR}/../meta-intel-aero"
-BBLAYERS += "${TOPDIR}/../meta-intel-aero-connectivity"
-BBLAYERS += "${TOPDIR}/../meta-intel-aero-librealsense"
-BBLAYERS += "${TOPDIR}/../meta-qt4"
-BBLAYERS += "${TOPDIR}/../meta-qt5"
-BBLAYERS += "${TOPDIR}/../meta-uav"
-BBLAYERS += "${TOPDIR}/../meta-openembedded/meta-oe"
-BBLAYERS += "${TOPDIR}/../meta-openembedded/meta-python"
-BBLAYERS += "${TOPDIR}/../meta-openembedded/meta-networking"
-
-# Copy meta-intel-aero conf/local.conf
-cp $POKYSRC/meta-intel-aero/conf/local.conf conf/local.conf
 
 # Build intel-aero-image
 bitbake intel-aero-image
