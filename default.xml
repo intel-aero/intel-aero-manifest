@@ -9,12 +9,13 @@
   <project name="poky" remote="yocto" revision="e93596fe74927e2e2f4dd7f671994ccb9744cff8"/>
   <project name="meta-openembedded" remote="oe" path="poky/meta-openembedded" revision="851a064b53dca3b14dd33eaaaca9573b1a36bf0e"/>
   <project name="meta-qt4" remote="yocto" path="poky/meta-qt4" revision="fc9b050569e94b5176bed28b69ef28514e4e4553"/>
-  <project name="meta-intel-aero" remote="intel-aero" path="poky/meta-intel-aero" revision="879de50d861e8e791bf056f4df1d5c8248b4b471"/>
-  <project name="meta-intel-aero-connectivity" remote="intel-aero" path="poky/meta-intel-aero-connectivity" revision="b9e38c18c0abf40d5eef8cdadf459e263bd19936"/>
+  <project name="meta-intel-aero" remote="intel-aero" path="poky/meta-intel-aero" revision="d058b2ccc7d7d6e8f59fda1c9f60e98665043262"/>
+  <project name="meta-intel-aero-connectivity" remote="intel-aero" path="poky/meta-intel-aero-connectivity" revision="5b25be5578e318a0ea823514a73deaae19c854cc"/>
   <project name="meta-uav" remote="intel-aero" path="poky/meta-uav" revision="f1abdde4895043ae712cd27d8a6295d17dcf26a7"/>
   <project name="meta-qt5" remote="qt5" path="poky/meta-qt5" revision="9aa870eecf6dc7a87678393bd55b97e21033ab48"/>
-  <project name="meta-ros" remote="intel-aero" path="poky/meta-ros" revision="909bbd3818ce1e78532f665fc36db4cc1887e1fe"/>
-  <project name="meta-intel-aero-librealsense" remote="intel-aero" path="poky/meta-intel-aero-librealsense" revision="aaede82379ebcf1ae84716855bc2b4efc4a9d53b"/>
+  <project name="meta-ros" remote="intel-aero" path="poky/meta-ros" revision="f9fdea5414f2e431a4797c2fefbb2dc81f8aea43"/>
+  <project name="meta-intel-aero-librealsense" remote="intel-aero" path="poky/meta-intel-aero-librealsense" revision="a7c4367b430a105dfc38b7ef2e750441bec5548c"/>
+  <project name="intel-aero-samples" remote="intel-aero" path="poky/intel-aero-samples" revision="2c9f7f1f0f38d4fb25c03575dea70caf1d771cf3"/>
 </manifest>
 
 <!--
