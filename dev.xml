@@ -13,7 +13,7 @@
   <project name="meta-intel-aero-connectivity" remote="intel-aero" path="poky/meta-intel-aero-connectivity" revision="5b25be5578e318a0ea823514a73deaae19c854cc"/>
   <project name="meta-uav" remote="intel-aero" path="poky/meta-uav" revision="master"/>
   <project name="meta-qt5" remote="qt5" path="poky/meta-qt5" revision="9aa870eecf6dc7a87678393bd55b97e21033ab48"/>
-  <project name="meta-ros" remote="intel-aero" path="poky/meta-ros" revision="f9fdea5414f2e431a4797c2fefbb2dc81f8aea43"/>
+  <project name="meta-ros" remote="intel-aero" path="poky/meta-ros" revision="3f783995740fea22be68320692d4b65e47e91c52"/>
   <project name="meta-intel-aero-librealsense" remote="intel-aero" path="poky/meta-intel-aero-librealsense" revision="a7c4367b430a105dfc38b7ef2e750441bec5548c"/>
   <project name="intel-aero-samples" remote="intel-aero" path="poky/intel-aero-samples" revision="2c9f7f1f0f38d4fb25c03575dea70caf1d771cf3"/>
 </manifest>
