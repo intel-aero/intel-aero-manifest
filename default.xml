@@ -15,7 +15,7 @@
   <project name="meta-intel-aero-connectivity" remote="intel-aero" path="poky/meta-intel-aero-connectivity" revision="master"/>
   <project name="meta-uav" remote="intel-aero" path="poky/meta-uav" revision="master"/>
   <project name="meta-ros" remote="intel-aero" path="poky/meta-ros" revision="master"/>
-  <project name="meta-intel-aero-librealsense" remote="intel-aero" path="poky/meta-intel-aero-librealsense" revision="master"/>
+  <project name="meta-intel-aero-librealsense" remote="intel-aero" path="poky/meta-intel-aero-librealsense" revision="krogoth"/>
   <project name="intel-aero-samples" remote="intel-aero" path="poky/intel-aero-samples" revision="master"/>
 </manifest>
 
