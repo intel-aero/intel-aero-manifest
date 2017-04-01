@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <!-- defaults -->
-  <default sync-j="4" revision="refs/tags/v01.00.04"/>
+  <default sync-j="4" revision="refs/tags/v01.00.05"/>
 
   <!-- remotes -->
   <remote fetch="http://git.yoctoproject.org/git/" name="yocto"/>
