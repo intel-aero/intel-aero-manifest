@@ -10,16 +10,19 @@
   <remote fetch="git://github.com/intel-aero/" name="intel-aero"/>
   <remote fetch="git://github.com/IntelRealSense/" name="intel-realsense"/>
 
-  <project name="poky" remote="yocto" revision="e93596fe74927e2e2f4dd7f671994ccb9744cff8"/>
-  <project name="meta-openembedded" remote="oe" path="poky/meta-openembedded" revision="851a064b53dca3b14dd33eaaaca9573b1a36bf0e"/>
-  <project name="meta-qt4" remote="yocto" path="poky/meta-qt4" revision="fc9b050569e94b5176bed28b69ef28514e4e4553"/>
-  <project name="meta-intel-aero" remote="intel-aero" path="poky/meta-intel-aero" revision="master"/>
-  <project name="meta-intel-aero-connectivity" remote="intel-aero" path="poky/meta-intel-aero-connectivity" revision="master"/>
-  <project name="meta-uav" remote="intel-aero" path="poky/meta-uav" revision="0f9395139b6a3c3f0f2c18a6a87f4048d0ca1a4f"/>
-  <project name="meta-qt5" remote="qt5" path="poky/meta-qt5" revision="9aa870eecf6dc7a87678393bd55b97e21033ab48"/>
-  <project name="meta-ros" remote="intel-aero" path="poky/meta-ros" revision="0a28ea090c27494e443a5912daf060538bb9a004"/>
-  <project name="meta-intel-realsense" remote="intel-realsense" path="poky/meta-intel-realsense" revision="178fa9220d77f14d8b1623d259106815551a13f2"/>
-  <project name="intel-aero-samples" remote="intel-aero" path="poky/intel-aero-samples" revision="2c9f7f1f0f38d4fb25c03575dea70caf1d771cf3"/>
+  <!-- projects -->
+  <project name="poky" remote="yocto" path="sources/poky" revision="e93596fe74927e2e2f4dd7f671994ccb9744cff8"/>
+  <project name="meta-openembedded" remote="oe" path="sources/meta-openembedded" revision="851a064b53dca3b14dd33eaaaca9573b1a36bf0e"/>
+  <project name="meta-qt4" remote="yocto" path="sources/meta-qt4" revision="fc9b050569e94b5176bed28b69ef28514e4e4553"/>
+  <project name="meta-qt5" remote="qt5" path="sources/meta-qt5" revision="9aa870eecf6dc7a87678393bd55b97e21033ab48"/>
+  <project name="meta-intel-aero" remote="intel-aero" path="sources/meta-intel-aero">
+      <copyfile dest="setup-environment" src="conf/base-script/setup-environment"/>
+  </project>
+  <project name="meta-intel-aero-connectivity" remote="intel-aero" path="sources/meta-intel-aero-connectivity"/>
+  <project name="meta-uav" remote="intel-aero" path="sources/meta-uav"/>
+  <project name="meta-ros" remote="intel-aero" path="sources/meta-ros"/>
+  <project name="meta-intel-realsense" remote="intel-realsense" path="sources/meta-intel-realsense" revision="178fa9220d77f14d8b1623d259106815551a13f2"/>
+  <project name="intel-aero-samples" remote="intel-aero" path="sources/intel-aero-samples"/>
 </manifest>
 
 <!--
