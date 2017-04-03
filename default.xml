@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <!-- defaults -->
-  <default sync-j="4" revision="refs/tags/v01.00.05"/>
+  <default sync-j="4" revision="refs/tags/v01.00.04"/>
 
   <!-- remotes -->
   <remote fetch="http://git.yoctoproject.org/git/" name="yocto"/>
@@ -9,13 +9,14 @@
   <remote fetch="git://github.com/meta-qt5/" name="qt5"/>
   <remote fetch="git://github.com/intel-aero/" name="intel-aero"/>
   <remote fetch="git://github.com/IntelRealSense/" name="intel-realsense"/>
+  <remote fetch="git://github.com/cyphyworks/" name="cyphy"/>
 
   <!-- projects -->
   <project name="poky" remote="yocto" path="sources/poky" revision="e93596fe74927e2e2f4dd7f671994ccb9744cff8"/>
   <project name="meta-openembedded" remote="oe" path="sources/meta-openembedded" revision="851a064b53dca3b14dd33eaaaca9573b1a36bf0e"/>
   <project name="meta-qt4" remote="yocto" path="sources/meta-qt4" revision="fc9b050569e94b5176bed28b69ef28514e4e4553"/>
   <project name="meta-qt5" remote="qt5" path="sources/meta-qt5" revision="9aa870eecf6dc7a87678393bd55b97e21033ab48"/>
-  <project name="meta-intel-aero" remote="intel-aero" path="sources/meta-intel-aero">
+  <project name="meta-intel-aero" remote="cyphy" path="sources/meta-intel-aero" revision="af755a1f3b6677729cb32670b385b79e56939e8e">
       <copyfile dest="setup-environment" src="conf/base-script/setup-environment"/>
   </project>
   <project name="meta-intel-aero-connectivity" remote="intel-aero" path="sources/meta-intel-aero-connectivity"/>
