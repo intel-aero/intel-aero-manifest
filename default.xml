@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <!-- External projects -->
+  <!-- defaults -->
+  <default sync-j="4" revision="refs/tags/v01.00.04"/>
+
   <remote fetch="http://git.yoctoproject.org/git/" name="yocto"/>
   <remote fetch="git://git.openembedded.org/" name="oe"/>
   <remote fetch="git://github.com/meta-qt5/" name="qt5"/>
