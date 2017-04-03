@@ -30,11 +30,12 @@
 Build Instructions:
 ===================
 
-cd poky;
-
 # Initialize build environment variables by running
-export TEMPLATECONF=meta-intel-aero/conf/
-source oe-init-build-env
+source setup-environment <environment_name>
+# <environment_name> can be any name you want
+# You can have as many environements as you need
+# Run the same command to source an already preexisting environemnt
+
 
 # Build intel-aero-image
 bitbake intel-aero-image
