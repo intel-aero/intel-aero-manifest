@@ -15,7 +15,7 @@
   <project name="meta-uav" remote="intel-aero" path="poky/meta-uav" revision="0f9395139b6a3c3f0f2c18a6a87f4048d0ca1a4f"/>
   <project name="meta-qt5" remote="qt5" path="poky/meta-qt5" revision="9aa870eecf6dc7a87678393bd55b97e21033ab48"/>
   <project name="meta-ros" remote="intel-aero" path="poky/meta-ros" revision="0a28ea090c27494e443a5912daf060538bb9a004"/>
-  <project name="meta-intel-realsense" remote="intel-realsense" path="poky/meta-intel-realsense" revision="178fa9220d77f14d8b1623d259106815551a13f2"/>
+  <project name="meta-intel-realsense" remote="intel-realsense" path="poky/meta-intel-realsense" revision="82e9dbfd8783292f42f4a6fcc7bd5b8a6b1c567"/>
   <project name="intel-aero-samples" remote="intel-aero" path="poky/intel-aero-samples" revision="2c9f7f1f0f38d4fb25c03575dea70caf1d771cf3"/>
 </manifest>
 
