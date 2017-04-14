@@ -7,8 +7,9 @@
   <remote fetch="git://github.com/intel-aero/" name="intel-aero"/>
   <remote fetch="git://github.com/IntelRealSense/" name="intel-realsense"/>
 
-  <project name="poky" remote="yocto" revision="e93596fe74927e2e2f4dd7f671994ccb9744cff8"/>
-  <project name="meta-openembedded" remote="oe" path="poky/meta-openembedded" revision="851a064b53dca3b14dd33eaaaca9573b1a36bf0e"/>
+  <project name="poky" remote="yocto" revision="cca8dd15c8096626052f6d8d25ff1e9a606104a3"/>
+  <project name="meta-intel" remote="yocto" path="poky/meta-intel" revision="39653f1b43f82c0eef798352a0c7a6be8f0b7091"/>
+  <project name="meta-openembedded" remote="oe" path="poky/meta-openembedded" revision="55c8a76da5dc099a7bc3838495c672140cedb78e"/>
   <project name="meta-qt4" remote="yocto" path="poky/meta-qt4" revision="fc9b050569e94b5176bed28b69ef28514e4e4553"/>
   <project name="meta-intel-aero" remote="intel-aero" path="poky/meta-intel-aero" revision="master"/>
   <project name="meta-intel-aero-connectivity" remote="intel-aero" path="poky/meta-intel-aero-connectivity" revision="master"/>
