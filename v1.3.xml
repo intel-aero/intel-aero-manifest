@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="git://github.com/intel-aero/" name="intel-aero"/>
+  <remote fetch="git://github.com/IntelRealSense/" name="intel-realsense"/>
+  <remote fetch="git://git.openembedded.org/" name="oe"/>
+  <remote fetch="git://github.com/meta-qt5/" name="qt5"/>
+  <remote fetch="http://git.yoctoproject.org/git/" name="yocto"/>
+  
+  <project name="meta-intel" path="poky/meta-intel" remote="yocto" revision="91ffb8144c11c391ea3f62ce2a59a49e0f1cb01c" upstream="39653f1b43f82c0eef798352a0c7a6be8f0b7091"/>
+  <project name="meta-intel-aero" path="poky/meta-intel-aero" remote="intel-aero" revision="a336a906566de718eac41a7a0800b3f056cbafd6" upstream="master"/>
+  <project name="meta-intel-aero-connectivity" path="poky/meta-intel-aero-connectivity" remote="intel-aero" revision="51f03bec324683258a9e98a9d2501620ea2fefb9" upstream="master"/>
+  <project name="meta-intel-realsense" path="poky/meta-intel-realsense" remote="intel-realsense" revision="82e9dbfd8783292f42f4a6fcc7bd5b8a6b1c567a"/>
+  <project name="meta-openembedded" path="poky/meta-openembedded" remote="oe" revision="55c8a76da5dc099a7bc3838495c672140cedb78e"/>
+  <project name="meta-qt4" path="poky/meta-qt4" remote="yocto" revision="fc9b050569e94b5176bed28b69ef28514e4e4553"/>
+  <project name="meta-qt5" path="poky/meta-qt5" remote="qt5" revision="9aa870eecf6dc7a87678393bd55b97e21033ab48"/>
+  <project name="meta-ros" path="poky/meta-ros" remote="intel-aero" revision="64c709153455fe09839c045366579e2d622f2be5" upstream="master"/>
+  <project name="meta-uav" path="poky/meta-uav" remote="intel-aero" revision="0f9395139b6a3c3f0f2c18a6a87f4048d0ca1a4f"/>
+  <project name="poky" remote="yocto" revision="cca8dd15c8096626052f6d8d25ff1e9a606104a3"/>
+</manifest>
