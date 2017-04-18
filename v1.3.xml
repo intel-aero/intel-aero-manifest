@@ -6,7 +6,7 @@
   <remote fetch="git://github.com/meta-qt5/" name="qt5"/>
   <remote fetch="http://git.yoctoproject.org/git/" name="yocto"/>
   
-  <project name="meta-intel" path="poky/meta-intel" remote="yocto" revision="91ffb8144c11c391ea3f62ce2a59a49e0f1cb01c" upstream="39653f1b43f82c0eef798352a0c7a6be8f0b7091"/>
+  <project name="meta-intel" path="poky/meta-intel" remote="yocto" revision="91ffb8144c11c391ea3f62ce2a59a49e0f1cb01c"/>
   <project name="meta-intel-aero" path="poky/meta-intel-aero" remote="intel-aero" revision="a336a906566de718eac41a7a0800b3f056cbafd6" upstream="master"/>
   <project name="meta-intel-aero-connectivity" path="poky/meta-intel-aero-connectivity" remote="intel-aero" revision="51f03bec324683258a9e98a9d2501620ea2fefb9" upstream="master"/>
   <project name="meta-intel-realsense" path="poky/meta-intel-realsense" remote="intel-realsense" revision="82e9dbfd8783292f42f4a6fcc7bd5b8a6b1c567a"/>
