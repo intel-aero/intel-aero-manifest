@@ -8,7 +8,7 @@
   <remote fetch="git://github.com/IntelRealSense/" name="intel-realsense"/>
 
   <project name="poky" remote="yocto" revision="cca8dd15c8096626052f6d8d25ff1e9a606104a3"/>
-  <project name="meta-intel" remote="yocto" path="poky/meta-intel" revision="91ffb8144c11c391ea3f62ce2a59a49e0f1cb01c"/>
+  <project name="meta-intel" remote="yocto" path="poky/meta-intel" revision="1f8dd1b00ce9c72d73583c405ec392690d9b08b7"/>
   <project name="meta-openembedded" remote="oe" path="poky/meta-openembedded" revision="55c8a76da5dc099a7bc3838495c672140cedb78e"/>
   <project name="meta-qt4" remote="yocto" path="poky/meta-qt4" revision="fc9b050569e94b5176bed28b69ef28514e4e4553"/>
   <project name="meta-intel-aero" remote="intel-aero" path="poky/meta-intel-aero" revision="master"/>
