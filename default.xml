@@ -10,7 +10,7 @@
   <project name="meta-virtualization" remote="yocto" revision="dd49614c70364a11dc50798f32f1b2ffa3d0409e"/>
   <project name="meta-openembedded" remote="oe" revision="pyro"/>
 
-  <project name="meta-intel" remote="yocto" revision="master"/>
+  <project name="meta-intel" remote="yocto" revision="pyro"/>
   <project name="meta-intel-aero-base" remote="intel-aero" revision="master-next"/>
   <project name="meta-intel-aero"      remote="intel-aero" revision="master-next"/>
 
