@@ -11,8 +11,8 @@
   <project name="meta-openembedded" remote="oe" revision="pyro"/>
 
   <project name="meta-intel" remote="yocto" revision="pyro"/>
-  <project name="meta-intel-aero-base" remote="intel-aero" revision="master-next"/>
-  <project name="meta-intel-aero"      remote="intel-aero" revision="master-next"/>
+  <project name="meta-intel-aero-base" remote="intel-aero" revision="master"/>
+  <project name="meta-intel-aero"      remote="intel-aero" revision="master"/>
 
   <project name="meta-intel-realsense" remote="intel-realsense" revision="master"/>
 </manifest>
@@ -22,7 +22,7 @@
 Build Instructions:
 ===================
 
-repo init -u https://github.com/intel-aero/intel-aero-manifest.git -b master-next
+repo init -u https://github.com/intel-aero/intel-aero-manifest.git -b master
 repo sync
 
 # Initialize build environment variables by running
