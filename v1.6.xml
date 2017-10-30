@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="git://github.com/intel-aero/" name="intel-aero"/>
+  <remote fetch="git://github.com/IntelRealSense/" name="intel-realsense"/>
+  <remote fetch="git://git.openembedded.org/" name="oe"/>
+  <remote fetch="http://git.yoctoproject.org/git/" name="yocto"/>
+  
+  <project name="meta-intel" remote="yocto" revision="4cd63f57820ce0e4ebd598251d3a13b5a4b9b791" upstream="pyro"/>
+  <project name="meta-intel-aero" remote="intel-aero" revision="a96a8fed779d6c02119ad9965e66bd051ff75a07" upstream="master"/>
+  <project name="meta-intel-aero-base" remote="intel-aero" revision="0c9f7a359c71f3c8b9f47efede194da51ccaefd7" upstream="master"/>
+  <project name="meta-intel-realsense" remote="intel-realsense" revision="211ce75af387b65fe894f13b3468148d2b9ab23d" upstream="master"/>
+  <project name="meta-openembedded" remote="oe" revision="b2ce52334cf88e07f703cf25ced92302edd5b0e9"/>
+  <project name="meta-virtualization" remote="yocto" revision="88277c84962e9d07ec777896a0ca8bd7db9ff5e2"/>
+  <project name="poky" remote="yocto" revision="50cc15335ebcdfa2a2fc52c11fa01695dfdb9e26" upstream="pyro"/>
+</manifest>
