@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- External projects -->
+  <remote fetch="http://git.yoctoproject.org/git/" name="yocto"/>
+  <remote fetch="git://git.openembedded.org/" name="oe"/>
+  <remote fetch="git://github.com/intel-aero/" name="intel-aero"/>
+  <remote fetch="git://github.com/IntelRealSense/" name="intel-realsense"/>
+
+  <project name="poky"       remote="yocto" revision="pyro"/>
+  <project name="meta-virtualization" remote="yocto" revision="pyro"/>
+  <project name="meta-openembedded" remote="oe" revision="b2ce52334cf88e07f703cf25ced92302edd5b0e9"/>
+
+  <project name="meta-intel" remote="yocto" revision="pyro"/>
+  <project name="meta-intel-aero-base" remote="intel-aero" revision="master"/>
+  <project name="meta-intel-aero"      remote="intel-aero" revision="master"/>
+
+  <project name="meta-intel-realsense" remote="intel-realsense" revision="master"/>
+</manifest>
+
+<!--
+
+Build Instructions:
+===================
+
+repo init -u https://github.com/intel-aero/intel-aero-manifest.git -b master
+repo sync
+
+# Initialize build environment variables by running
+export TEMPLATECONF=../meta-intel-aero/conf
+source poky/oe-init-build-env
+
+# Build intel-aero-image
+bitbake intel-aero-image
+
+-->
