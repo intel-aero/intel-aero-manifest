@@ -10,7 +10,7 @@
   <project name="meta-intel-aero-base" remote="intel-aero" revision="61ecc271ab5f98d05e2bf0b1ebd5ccb929d27160" upstream="master"/>
   <project name="meta-intel-realsense" remote="intel-realsense" revision="d416c002bad3c1a9990105f5d9ff90fcdc678a7a" upstream="master"/>
   <project name="meta-openembedded" remote="oe" revision="b2ce52334cf88e07f703cf25ced92302edd5b0e9"/>
-  <project name="meta-virtualization" remote="yocto" revision="88277c84962e9d07ec777896a0ca8bd7db9ff5e2"/>
+  <project name="meta-virtualization" remote="yocto" revision=" 45ad257a1e4a6707c376d2f7eb26c3c8bdf03607"/>
   <project name="poky" remote="yocto" revision="022df4653576c72752156bef8fda0e1aa46733d2" upstream="pyro"/>
 </manifest>
 
